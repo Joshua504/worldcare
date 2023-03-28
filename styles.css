@@ -547,11 +547,11 @@ ul li a:hover,
 	place-items: center;
 	align-items: center;
 }
-.social-con > .social-icon > .icon1{
+.social-con > .social-icon > .icon1 {
 	font-size: 22px;
 	color: #fff;
 }
-.social-con > .social-icon:hover{
+.social-con > .social-icon:hover {
 	background: #77ad4c;
 }
 .container3 > div > p {
@@ -574,10 +574,10 @@ ul li a:hover,
 	right: 0;
 	transition: 0.25s ease;
 }
-.totop:hover{
+.totop:hover {
 	background: #ffd541;
 }
-.totop > a{
+.totop > a {
 	font-size: 22px;
 	color: #fff;
 }
@@ -641,24 +641,24 @@ ul li a:hover,
 	margin-top: 30px;
 }
 /* ------------------------------- our-mission ------------------------------ */
-.our-mison{
+.our-mison {
 	padding: 7.1875em 0;
 }
-.our-mison > .title > h2{
+.our-mison > .title > h2 {
 	color: #151515;
 	font-size: clamp(1.5rem, 8dvw, 2.5rem);
 	font-family: var(--Ff-s);
 	font-weight: bold;
 	text-align: center;
 }
-.our-mison > .mission{
+.our-mison > .mission {
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	padding: 0 15px;
 	margin: 4em 3em;
 }
-.our-mison > .mission > .miss-cont{
+.our-mison > .mission > .miss-cont {
 	padding: 0 15px;
 	margin-bottom: 60px;
 	display: flex;
@@ -688,14 +688,13 @@ ul li a:hover,
 	font-weight: 200;
 	line-height: 25px;
 	margin-top: 5px;
-	
 }
 /* -------------------------------- our-team -------------------------------- */
-.our-team{
+.our-team {
 	padding: 7.1875em 0;
 	background: #f5f5f5;
 }
-.our-team > h2{
+.our-team > h2 {
 	color: #151515;
 	font-size: clamp(1.5rem, 8dvw, 2.5rem);
 	font-family: var(--Ff-s);
@@ -704,40 +703,159 @@ ul li a:hover,
 	text-transform: capitalize;
 	margin-bottom: 2em;
 }
-.our-team > div{
+.our-team > div {
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	flex-wrap: wrap;
+	gap: 0.1em;
 }
-.our-team > div > div{
-	transition: .25s ease;
+.our-team > div > div {
+	position: relative;
+	transition: 0.25s ease;
 	cursor: pointer;
 }
-.our-team > div > div:hover{
-box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;}
-.our-team > div > div > div{
+.our-team > div > div:hover .soc {
+	display: block;
+}
+.our-team > div > div:hover {
+	box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+		rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+.our-team > div > div > section {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	position: absolute;
+	top: 2em;
+	left: 22em;
+	display: none;
+	transition: 0.3s ease;
+}
+.our-team > div > div > section > div {
+	margin-top: 15px;
+}
+.our-team > div > div > section > div > .icon2 {
+	font-size: 27px;
+	opacity: 0.3;
+	cursor: pointer;
+	transition: 0.3s ease;
+}
+.our-team > div > div > section > div > .icon2:hover {
+	opacity: 1;
+}
+.our-team > div > div > div {
 	text-align: center;
 	background: #fff;
 	padding: 17px 25px 30px;
 	position: relative;
 	top: -7px;
 }
-
-
-.our-team > div > div > div > h3{
+.our-team > div > div > div > h3 {
 	color: #151515;
 	font-size: clamp(1.375rem, 5vw, 1.5rem);
 	font-weight: 200;
 	transition: 0.25s ease;
 	cursor: pointer;
 }
-.our-team > div > div > div > h3:hover{
+.our-team > div > div > div > h3:hover {
 	color: var(--H-bg-c);
 }
-
-
-
+/* ---------------------------- contacts-styling ---------------------------- */
+.contact {
+	padding: 7.1875em 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+}
+.contact > div {
+	padding: 0 15px;
+	margin: auto;
+	text-align: center;
+}
+.contact > div > .icon3 {
+	font-size: 4.375rem;
+	color: #6377b0;
+}
+.contact > div > div {
+	margin: 25px 0 50px;
+}
+.contact > div > div > h3 {
+	font-size: clamp(1.375rem, 5vw, 1.5rem);
+	font-weight: 300;
+	font-family: var(--Ff-s);
+	color: #151515;
+	cursor: pointer;
+	transition: 0.3s ease;
+}
+.contact > div > div > h3:hover {
+	color: #77ad4c;
+}
+.contact > div > div > p {
+	font-size: 14px;
+	color: #6377b0;
+	text-transform: capitalize;
+	padding-top: 20px;
+}
+/* ------------------------------ get in touch ------------------------------ */
+.fom {
+	padding: 7.1875em 0;
+	background: #f5f5f5;
+}
+.fom > h2 {
+	color: #151515;
+	font-size: clamp(1.5rem, 8vw, 2.5rem);
+	font-family: var(--Ff-s);
+	font-weight: bold;
+	text-align: center;
+	text-transform: capitalize;
+	margin-bottom: 2em;
+}
+.fom > form {
+	text-align: center;
+}
+.fom > form > div {
+	width: 100%;
+}
+.fom > form > div > input {
+	color: #151515;
+	padding: 16px 25px;
+	margin-bottom: 20px;
+	width: 50%;
+	outline: none;
+	border: 1px solid #575757;
+	border-radius: 5px;
+	font-weight: 800;
+	text-transform: capitalize;
+}
+.fom > form > div > textarea {
+	width: 50%;
+	padding: 16px 25px;
+	margin-bottom: 20px;
+	outline: none;
+	border: 1px solid #575757;
+	border-radius: 5px;
+	color: #151515;
+	font-weight: 800;
+	text-transform: capitalize;
+}
+.fom > form > div > button {
+	padding: 18px 35px;
+	background: #7fbc4e;
+	color: #fff;
+	text-transform: uppercase;
+	outline: none;
+	border: none;
+	border-radius: 7px;
+	width: 20%;
+	cursor: pointer;
+	transition: 0.3s ease;
+}
+.fom > form > div > button:hover {
+	background: #151515;
+}
 
 /* ----------------------------- screen-changes ----------------------------- */
 @media (width <= 767px) {
@@ -974,6 +1092,9 @@ box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px
 	.container3 > div > p {
 		text-align: center;
 	}
+	.totop:hover {
+		background: #77ad4c;
+	}
 	.scroll {
 		left: 81%;
 	}
@@ -988,25 +1109,45 @@ box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px
 		margin-bottom: 50px;
 	}
 	/* ------------------------------- our-mission ------------------------------ */
-	.our-mison{
-	padding: 4.375em 0;
-}
-.our-mison > .mission{
-	flex-direction: column;
-	margin: 0;
-	padding: 0;
-	text-align: center;
-}
-.our-mison > .title > h2{
-	margin-bottom: 2em;
-}
-.our-mison > .mission > .miss-cont{
-	flex-direction: column;
-}
-.mission > .miss-cont .icon-txt {
-	margin-left: 0px;
-	width: 100%;
-}
+	.our-mison {
+		padding: 4.375em 0;
+	}
+	.our-mison > .mission {
+		flex-direction: column;
+		margin: 0;
+		padding: 0;
+		text-align: center;
+	}
+	.our-mison > .title > h2 {
+		margin-bottom: 2em;
+	}
+	.our-mison > .mission > .miss-cont {
+		flex-direction: column;
+	}
+	.mission > .miss-cont .icon-txt {
+		margin-left: 0px;
+		width: 100%;
+	}
+	/* ---------------------------- contacts-styling ---------------------------- */
+	.contact {
+		padding: 4.375em 0;
+	}
+	/* ------------------------------ get in touch ------------------------------ */
+	.fom {
+		padding: 4.375em 0;
+	}
+	.fom > form {
+		padding: 0 15px;
+	}
+	.fom > form > div > input {
+		width: 100%;
+	}
+	.fom > form > div > textarea {
+		width: 100%;
+	}
+	.fom > form > div > button {
+		width: 100%;
+	}
 }
 
 /* ------------------------------ medium-screen ----------------------------- */
@@ -1146,6 +1287,9 @@ box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px
 		margin-top: 10px;
 		border: none;
 	}
+	.totop:hover {
+		background: #77ad4c;
+	}
 	.scroll {
 		left: 90%;
 	}
@@ -1160,28 +1304,31 @@ box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px
 	.abt-us > div > img {
 		margin-bottom: 50px;
 	}
-		/* ------------------------------- our-mission ------------------------------ */
-	.our-mison{
-	padding: 4.375em 0;
-}
-.our-mison > .mission{
-	margin: 0;
-	padding: 0;
-	flex-direction: column;
-}
-.our-mison > .mission > .miss-cont{
-	flex-direction: column;
-	text-align: center;
-	margin-bottom: 20px;
-}
-.our-mison > .title > h2{
-	margin-bottom: 2em;
-}
-/* .our-mison > .mission > .miss-cont{
-	flex-direction: column;
-} */
-.mission > .miss-cont .icon-txt {
-	margin-left: 5px;
-	width: 100%;
-}
+	/* ------------------------------- our-mission ------------------------------ */
+	.our-mison {
+		padding: 4.375em 0;
+	}
+	.our-mison > .mission {
+		margin: 0;
+		padding: 0;
+		flex-direction: column;
+	}
+	.our-mison > .mission > .miss-cont {
+		flex-direction: column;
+		text-align: center;
+		margin-bottom: 20px;
+	}
+	.our-mison > .title > h2 {
+		margin-bottom: 2em;
+	}
+	.mission > .miss-cont .icon-txt {
+		margin-left: 5px;
+		width: 100%;
+	}
+	.fom > form > div > input {
+		width: 60%;
+	}
+	.fom > form > div > textarea {
+		width: 60%;
+	}
 }
